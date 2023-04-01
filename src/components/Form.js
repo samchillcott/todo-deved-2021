@@ -1,11 +1,14 @@
 import React from 'react'
+// import FontAwesomeIcon from "@fortawesome/fontawesome-free"
+// import faPlus from "@fortawesome/fontawesome-free"
 
 const Form = () => {
   return (
-    <form action="">
+    <form>
       <input type="text" className="todo-input" />
       <button type="submit" className="todo-button">
-        <i className="fas fa-plus-square"></i>
+        {/* <FontAwesomeIcon icon={ faPlus } /> */}
+        <i class="fas fa-plus-square"></i>
       </button>
       <div className="select">
         <select name="todos" className="filter-todo">
