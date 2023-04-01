@@ -1,4 +1,5 @@
 import React from 'react'
+import Todo from './Todo'
 
 const TodoList = () => {
   return (
@@ -6,7 +7,8 @@ const TodoList = () => {
       <ul className="todo-list">
         <Todo />
       </ul>
-    </div>)
+    </div>
+  )
 }
 
 export default TodoList
