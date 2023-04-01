@@ -1,13 +1,11 @@
-import React from 'react'
-// import FontAwesomeIcon from "@fortawesome/fontawesome-free"
-// import faPlus from "@fortawesome/fontawesome-free"
-
-const Form = () => {
+const Form = ({ setInputText }) => {
+  const inputTextHandler = (e) => {
+    setInputText(e.target.value);
+  }
   return (
     <form>
-      <input type="text" className="todo-input" />
+      <input type="text" onChange={ inputTextHandler } className="todo-input" />
       <button type="submit" className="todo-button">
-        {/* <FontAwesomeIcon icon={ faPlus } /> */}
         <i class="fas fa-plus-square"></i>
       </button>
       <div className="select">
