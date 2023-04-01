@@ -4,9 +4,12 @@ const Todo = () => {
   return (
     <div className='todo'>
       <li className='todo-item'>HEY</li>
-      <button className='fas fa-check'></button>
-      <button className='fas fa-trash'></button>
-
+      <button>
+        <i className='fas fa-check'></i>
+      </button>
+      <button >
+        <i className='fas fa-trash'></i>
+      </button>
     </div>
   )
 }
