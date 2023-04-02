@@ -1,8 +1,8 @@
-const Form = ({ inputText, setInputText, todos, setTodos }) => {
+const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   }
-  
+
   const submitTodoHandler = (e) => {
     e.preventDefault()
     setTodos([
@@ -14,6 +14,10 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
       }
     ])
     setInputText("")
+  }
+
+  const statusHandler = (e) => {
+    setStatus(e.target.value)
   }
 
   return (
@@ -28,10 +32,10 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
         <i class="fas fa-plus-square"></i>
       </button>
       <div className="select">
-        <select name="todos" className="filter-todo">
+        <select name="todos" className="filter-todo" onChange={ statusHandler }>
           <option value="all">All</option>
-          <option value="Complete">Complete</option>
-          <option value="Incomplete">Incomplete</option>
+          <option value="complete">Complete</option>
+          <option value="incomplete">Incomplete</option>
         </select>
       </div>
     </form>
