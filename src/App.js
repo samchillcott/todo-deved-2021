@@ -18,6 +18,7 @@ function App() {
         />
         <TodoList
           todos={ todos }
+          setTodos={ setTodos }
         />
 
       </header>

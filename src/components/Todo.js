@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Todo = ({ text, id }) => {
-  const deleteHandler = (id) => {
-
+const Todo = ({ text, id, todos, setTodos, todo }) => {
+  const deleteHandler = () => {
+    // console.log(e);
+    setTodos(todos.filter((el) => el.id !== todo.id))
   }
 
   return (
@@ -13,7 +14,7 @@ const Todo = ({ text, id }) => {
       </button>
       <button
         className='trash-button'
-        onClick={ deleteHandler(id) }
+        onClick={ deleteHandler }
       >
         <i className='fas fa-trash'></i>
       </button>
