@@ -101,7 +101,7 @@ form button:hover {
   opacity: 0;
 }
 
-.completed {
+.complete {
   text-decoration: line-through;
   opacity: 0.5;
 }

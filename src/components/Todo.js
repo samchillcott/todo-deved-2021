@@ -18,7 +18,7 @@ const Todo = ({ text, id, todos, setTodos, todo }) => {
 
   return (
     <div className='todo'>
-      <li className={ `todo-item ${todo.completed ? "complete" : ""}` }>
+      <li className={ `todo-item ${todo.complete ? "complete" : ""}` }>
         { text }
       </li>
       <button
