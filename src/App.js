@@ -31,19 +31,18 @@ function App() {
     <div className="App">
       <header>
         <h1>Todo List</h1>
-        <Form
-          inputText={ inputText }
-          setInputText={ setInputText }
-          todos={ todos }
-          setTodos={ setTodos }
-          setStatus={ setStatus }
-        />
-        <TodoList
-          todos={ todos }
-          setTodos={ setTodos }
-        />
-
       </header>
+      <Form
+        inputText={ inputText }
+        setInputText={ setInputText }
+        todos={ todos }
+        setTodos={ setTodos }
+        setStatus={ setStatus }
+      />
+      <TodoList
+        todos={ todos }
+        setTodos={ setTodos }
+      />
     </div>
   );
 }
