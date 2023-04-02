@@ -42,6 +42,7 @@ function App() {
       <TodoList
         todos={ todos }
         setTodos={ setTodos }
+        filteredTodos={ filteredTodos }
       />
     </div>
   );
