@@ -22,13 +22,13 @@ const Todo = ({ text, id, todos, setTodos, todo }) => {
         { text }
       </li>
       <button
-        className='complete-button'
+        className='complete-btn'
         onClick={ completeHandler }
       >
         <i className='fas fa-check'></i>
       </button>
       <button
-        className='trash-button'
+        className='trash-btn'
         onClick={ deleteHandler }
       >
         <i className='fas fa-trash'></i>

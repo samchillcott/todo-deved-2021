@@ -14,7 +14,6 @@ function App() {
     getLocalTodos()
   }, [])
 
-
   useEffect(() => {
     filterHandler()
     saveLocalTodos()
@@ -42,7 +41,7 @@ function App() {
     if (localStorage.getItem('todos') === null) {
       localStorage.setItem('todos', JSON.stringify([]))
     } else {
-      let localTodos = JSON.parse(localStorage.getItem("todos"))
+      let localTodos = JSON.parse(localStorage.getItem('todos'))
       setTodos(localTodos)
     }
   }
