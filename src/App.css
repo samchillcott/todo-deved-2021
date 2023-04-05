@@ -96,11 +96,6 @@ form button:hover {
   pointer-events: none;
 }
 
-.fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
-}
-
 .complete {
   text-decoration: line-through;
   opacity: 0.5;
@@ -143,10 +138,3 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
-
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
-}
-*/
