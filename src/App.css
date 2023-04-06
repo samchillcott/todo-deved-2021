@@ -75,7 +75,8 @@ form button:hover {
 
 .trash-btn,
 .complete-btn,
-.edit-btn {
+.edit-btn,
+.save-btn {
   background: #ff6f47;
   color: white;
   border: none;
