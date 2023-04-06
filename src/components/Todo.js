@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Todo = ({ text, id, todos, setTodos, todo }) => {
+  const [editMode, setEditMode] = useState(false);
+
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id))
   }
@@ -16,11 +18,19 @@ const Todo = ({ text, id, todos, setTodos, todo }) => {
     })))
   }
 
+  const editHandler = () => { setEditMode(true) }
+
   return (
     <div className='todo'>
       <li className={ `todo-item ${todo.complete ? "complete" : ""}` }>
         { text }
       </li>
+      <button
+        className='edit-btn'
+        onClick={ editHandler }
+      >
+        <i className='fas fa-edit'></i>
+      </button>
       <button
         className='complete-btn'
         onClick={ completeHandler }
