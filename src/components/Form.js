@@ -5,15 +5,19 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
   const submitTodoHandler = (e) => {
     e.preventDefault()
-    setTodos([
-      ...todos,
-      {
-        text: inputText,
-        complete: false,
-        id: Math.random() * 1000
-      }
-    ])
-    setInputText("")
+    if (inputText === "") {
+      alert("Please enter a Todo")
+    } else {
+      setTodos([
+        ...todos,
+        {
+          text: inputText,
+          complete: false,
+          id: Math.random() * 1000
+        }
+      ])
+      setInputText("")
+    }
   }
 
   const statusHandler = (e) => {
